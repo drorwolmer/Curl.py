@@ -1,0 +1,10 @@
+import urllib.request
+import urllib.parse
+import logging
+try:
+	url = urllib.request.urlopen('https://www.google.com/search?1=test')
+
+	logging.info(url.read())
+
+except Exception as e:
+	logging.error('Go to another site')
